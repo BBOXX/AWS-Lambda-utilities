@@ -1,0 +1,4 @@
+*pycache*
+/example-env
+*.zip
+settings.json
