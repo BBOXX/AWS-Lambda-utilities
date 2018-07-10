@@ -35,7 +35,7 @@ def addLibrariesToZip(zipf):
     """
     Adds all packages in the PATH_TO_VIRTUAL_ENV_PACKAGES to the zip file
     """
-    for packageToAdd in glob(os.path.join(PATH_TO_VIRTUAL_ENV_PACKAGES, '**/*')):
+    for packageToAdd in glob(os.path.join(PATH_TO_VIRTUAL_ENV_PACKAGES, '**/*'), recursive=True):
         # removes excess subdirectories as required by aws
         destinationPath = os.path.join(*packageToAdd.split('/')[5:])
         zipf.write(packageToAdd, destinationPath)
