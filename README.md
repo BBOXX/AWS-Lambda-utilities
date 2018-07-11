@@ -1,6 +1,6 @@
 # Aim of this project
 
-The aim of this project is to provide utitites to speep up development of python projects using aws lambda by reducing the update of the lambda function to one command.
+The aim of this project is to provide utilities to speep up development of python projects using aws lambda by reducing the update of the lambda function to one command.
 This is particularly useful for projects that require several iterations of deployment which would make building the zip package as required by aws a painful and repetitive task.
 The main functionality offered is the automatic zip package building and update of the lambda function.
 
@@ -22,8 +22,9 @@ If you have not done so, you will need to set up aws CLI following these guides 
 
 ## Configuration
 
-In the lambda_tools/zipper.py file, you will find several cosntants that may need to be updated for your project.
+In the lambda_tools/zipper.py file, you will find several constants that may need to be updated for your project.
 Each is explained in the file and should be straightforward to update if necessary.
+
 You will also need to update the shell file lambda_tools/push_function.zip with your lambda function name.
 
 ## Usage
