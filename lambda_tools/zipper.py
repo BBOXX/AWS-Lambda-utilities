@@ -11,7 +11,7 @@ LOOKUP_PATHS = ['../*.py', '../*.ini']
 # Files included in the list above but that you do not wish to send to lambda such as unit tests
 FILES_TO_EXCLUDE = ['../unit_tests.py']
 
-# Destination path where the zip folder should be created
+# Destination path where the zip folder should be created !!!If you change this, you will need to change the shell file as well
 ZIP_PATH = './lambda_function.zip'
 
 
